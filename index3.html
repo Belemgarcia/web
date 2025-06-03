@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Calzado</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #3a3226;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #d4c9b8;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: #8b5a2b;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #5d4b36;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 20px;
+        }
+        
+        nav ul li a:hover {
+            color: #b38b6d;
+        }
+        
+        .featured-product {
+            padding: 60px 0;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            background-color: #f9f7f3;
+        }
+        
+        .product-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 45px;
+            color: #5d4b36;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(91, 71, 52, 0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #d4c9b8;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 15px rgba(91, 71, 52, 0.15);
+        }
+        
+        .product-img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .product-title {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #5d4b36;
+        }
+        
+        .product-price {
+            font-weight: bold;
+            color: #8b5a2b;
+            font-size: 20px;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+        
+        .enlace-producto {
+            display: inline-block;
+            background-color: #8b5a2b;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-size: 18px;
+            border: 2px solid #8b5a2b;
+        }
+        
+        .enlace-producto:hover {
+            background-color: #6b4520;
+            border-color: #6b4520;
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            background-color: #3a3226;
+            color: #d4c9b8;
+            padding: 25px 0;
+            text-align: center;
+        }
+        
+        .copyright {
+            padding-top: 15px;
+            border-top: 1px solid #5d4b36;
+            font-size: 14px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Mi Calzado</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index1.html">Hombres</a></li>
+                        <li><a href="index2.html">Mujeres</a></li>
+                        <li><a href="index3.html">Niños</a></li>
+                        <li><a href="index4.html">Zapatillas</a></li>
+                        <li><a href="index5.html">Sandalias</a></li>
+                        <li><a href="index6.html">Revista</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="featured-product">
+        <div class="container">
+            <div class="product-container">
+                <h2 class="section-title">Producto Destacado</h2>
+                <div class="product-card">
+                    <img src="tenis de niños.jpeg" alt="Zapatos deportivos premium" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Zapatos Deportivos Premium Para Niños</h3>
+                        <p class="product-price">¡Dale a tus pequeños aventureros el calzado perfecto para explorar 
+                            el mundo con estas zapatillas deportivas llenas de energía! Con un vibrante color azul y 
+                            detalles de rayas blancas que evocan velocidad y dinamismo, estas zapatillas no solo lucen 
+                            geniales, sino que también ofrecen la comodidad y el soporte que los pies en crecimiento necesitan.
+                             El práctico cierre de velcro permite que los niños se las pongan y se las quiten fácilmente, 
+                             fomentando su independencia. Ligeras y resistentes, son ideales para correr, saltar y 
+                             jugar sin parar, acompañando cada una de sus emocionantes travesías con estilo y seguridad.
+                              ¡Prepárate para verlos volar con estas zapatillas que combinan diversión y funcionalidad en 
+                              cada paso!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>Proyecto Del Segundo Parcial De Paginas Web, Elaborada Por Belem Cerro Garcia</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
